@@ -3,25 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.cevrimiciresim;
+package com.cevrimiciresim.sekil;
 
 import java.awt.Graphics;
 import java.awt.Point;
 
 /**
  *
- * @author Lab
+ * @author HP
  */
-public class Cizgi extends Sekil {
+public class Yay extends Sekil {
 
-    public Cizgi(Point start, Point end) {
+    public Yay(Point start, Point end) {
+
         super(start, end);
     }
 
     @Override
     public void ciz(Graphics g) {
-        g.drawLine((int) start.getX(), (int) start.getY(), (int) end.getX(), (int) end.getY());
 
+        g.drawArc((int) start.getX(), (int) start.getY(), (int) Math.abs(end.getX()-start.getX()),
+                (int) Math.abs(end.getY()-start.getY()), 30, 78);
 
     }
 

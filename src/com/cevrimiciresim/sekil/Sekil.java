@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.cevrimiciresim;
+package com.cevrimiciresim.sekil;
 
 import java.awt.Graphics;
 import java.awt.Point;
@@ -12,9 +12,9 @@ import java.awt.Point;
  *
  * @author Lab
  */
-abstract class Sekil {
+public abstract class Sekil {
 
-    Point start, end;
+    public Point start, end;
 
     public Sekil(Point start, Point end) {
         this.start = start;

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.cevrimiciresim;
+package com.cevrimiciresim.sekil;
 
 
 import java.awt.Graphics;

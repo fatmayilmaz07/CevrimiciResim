@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.cevrimiciresim;
+package com.cevrimiciresim.sekil;
 
 import java.awt.Point;
 import java.awt.Graphics;
@@ -12,16 +12,17 @@ import java.awt.Graphics;
  *
  * @author HP
  */
-public class Ucgen extends Sekil {
+public class DikUcgen extends Sekil {
 
-    public Ucgen(Point start, Point end) {
+    public DikUcgen(Point start, Point end) {
         super(start, end);
     }
+
 
     @Override
     public void ciz(Graphics g) {
 
-        int x[] = {(int) (start.getX() + (end.getX() - start.getX()) / 2), (int) start.getX(), (int) end.getX()};
+        int x[] = {(int) start.getX(), (int) start.getX(), (int) end.getX()};
         int y[] = {(int) start.getY(), (int) end.getY(), (int) end.getY()};
         g.drawPolygon(x, y, 3);
 
