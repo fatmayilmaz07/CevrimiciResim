@@ -21,21 +21,19 @@ public class Besgen extends Sekil {
 
     @Override
     public void ciz(Graphics g) {
-          int[]x={(int)start.getX(),
-             (int)Math.abs (start.getX() + (end.getX() - start.getX()) / 4),
+        int[] x = {(int) start.getX(),
+            (int) Math.abs(start.getX() + (end.getX() - start.getX()) / 4),
             (int) Math.abs(start.getX() + (end.getX() - start.getX()) / 2),
-            (int)end.getX(),(int)Math.abs (start.getX() + (end.getX() - start.getX()) ),
-             (int) Math.abs(start.getX()+(end.getX() - start.getX()) / 2)
-            };
-        
-        
-        int[]y={(int)end.getY(),(int)Math.abs (start.getY() + (end.getY() - start.getY()) / 4),
-            (int)start.getY(),(int) Math.abs(start.getY() + (end.getY() - start.getY()) / 4),
-           (int)end.getY(),(int)end.getY()};
-        
+            (int) end.getX(), (int) Math.abs(start.getX() + (end.getX() - start.getX())),
+            (int) Math.abs(start.getX() + (end.getX() - start.getX()) / 2)
+        };
+
+        int[] y = {(int) end.getY(), (int) Math.abs(start.getY() + (end.getY() - start.getY()) / 4),
+            (int) start.getY(), (int) Math.abs(start.getY() + (end.getY() - start.getY()) / 4),
+            (int) end.getY(), (int) end.getY()};
+
         g.drawPolygon(x, y, 6);
-        
-        
+
     }
 
 }
