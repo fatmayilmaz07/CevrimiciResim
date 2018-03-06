@@ -22,8 +22,8 @@ public class Yay extends Sekil {
     @Override
     public void ciz(Graphics g) {
 
-        g.drawArc((int) start.getX(), (int) start.getY(), (int) Math.abs(end.getX()-start.getX()),
-                (int) Math.abs(end.getY()-start.getY()), 30, 78);
+        g.drawArc((int) start.getX(), (int) start.getY(), (int) Math.abs(end.getX() - start.getX()),
+                (int) Math.abs(end.getY() - start.getY()), 30, 78);
 
     }
 

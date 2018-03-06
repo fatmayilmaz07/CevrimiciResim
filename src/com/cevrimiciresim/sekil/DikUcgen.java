@@ -18,7 +18,6 @@ public class DikUcgen extends Sekil {
         super(start, end);
     }
 
-
     @Override
     public void ciz(Graphics g) {
 

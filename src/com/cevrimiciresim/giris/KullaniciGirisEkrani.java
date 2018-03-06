@@ -17,6 +17,7 @@ public class KullaniciGirisEkrani extends javax.swing.JFrame {
      * Creates new form ApFormLogin
      */
     JFrame parentFrame;
+
     public KullaniciGirisEkrani(JFrame parentFrame) {
         initComponents();
         this.parentFrame = parentFrame;
@@ -182,8 +183,6 @@ public class KullaniciGirisEkrani extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton2ActionPerformed
-
- 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;

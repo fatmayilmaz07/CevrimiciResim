@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class MyCanvas extends Canvas implements MouseMotionListener, MouseListener {
 
     enum CIZIM_MODU {
-        KARE, DIKDORTGEN, COKLUCIZGI, CIZGI, OVAL, YAY, YILDIZ, UCGEN,DIKUCGEN,YUVARLAKDORTGEN
+        KARE, DIKDORTGEN, COKLUCIZGI, CIZGI, OVAL, YAY, YILDIZ, UCGEN, DIKUCGEN, YUVARLAKDORTGEN, BESGEN
     }
 
     CIZIM_MODU suankiMod = CIZIM_MODU.CIZGI;
@@ -51,7 +51,8 @@ public class MyCanvas extends Canvas implements MouseMotionListener, MouseListen
         if (!list.isEmpty()) {
             if (suankiMod == CIZIM_MODU.KARE || suankiMod == CIZIM_MODU.DIKDORTGEN
                     || suankiMod == CIZIM_MODU.CIZGI || suankiMod == CIZIM_MODU.OVAL || suankiMod == CIZIM_MODU.YAY
-                    || suankiMod == CIZIM_MODU.YILDIZ || suankiMod == CIZIM_MODU.UCGEN || suankiMod == CIZIM_MODU.DIKUCGEN || suankiMod == CIZIM_MODU.YUVARLAKDORTGEN) {
+                    || suankiMod == CIZIM_MODU.YILDIZ || suankiMod == CIZIM_MODU.UCGEN || suankiMod == CIZIM_MODU.DIKUCGEN || suankiMod == CIZIM_MODU.YUVARLAKDORTGEN
+                    || suankiMod == CIZIM_MODU.BESGEN) {
                 {
                     list.get(list.size() - 1).end = e.getPoint();
                 }
@@ -99,15 +100,16 @@ public class MyCanvas extends Canvas implements MouseMotionListener, MouseListen
 
         } else if (suankiMod == CIZIM_MODU.UCGEN) {
             list.add(new Ucgen(e.getPoint(), e.getPoint()));
-        }
-         else if (suankiMod == CIZIM_MODU.DIKUCGEN) {
+        } else if (suankiMod == CIZIM_MODU.DIKUCGEN) {
             list.add(new DikUcgen(e.getPoint(), e.getPoint()));
-        }
-         else if (suankiMod == CIZIM_MODU.YUVARLAKDORTGEN) //dikdortgen
+        } else if (suankiMod == CIZIM_MODU.YUVARLAKDORTGEN) //dikdortgen
         {
             list.add(new YuvarlakDortgen(e.getPoint(), e.getPoint()));
 
-        } 
+        } else if (suankiMod == CIZIM_MODU.BESGEN) {
+
+            list.add(new Besgen(e.getPoint(), e.getPoint()));
+        }
 
     }
 

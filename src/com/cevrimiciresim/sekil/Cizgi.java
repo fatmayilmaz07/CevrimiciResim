@@ -22,7 +22,6 @@ public class Cizgi extends Sekil {
     public void ciz(Graphics g) {
         g.drawLine((int) start.getX(), (int) start.getY(), (int) end.getX(), (int) end.getY());
 
-
     }
 
 }

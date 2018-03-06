@@ -10,7 +10,7 @@ import java.awt.event.WindowListener;
 
 /**
  *
- * @author Teknosa 
+ * @author Teknosa
  */
 public class KayitEkrani extends javax.swing.JFrame implements WindowListener {
 
@@ -18,15 +18,15 @@ public class KayitEkrani extends javax.swing.JFrame implements WindowListener {
      * Creates new form AppFormRegister
      */
     KullaniciGirisEkrani kullaniciGirisEkrani;
+
     public KayitEkrani(KullaniciGirisEkrani kullaniciGirisEkrani) {
         initComponents();
-        
+
         this.kullaniciGirisEkrani = kullaniciGirisEkrani;
         kullaniciGirisEkrani.setVisible(false);
-        
+
         addWindowListener(this);
     }
- 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -192,8 +192,6 @@ public class KayitEkrani extends javax.swing.JFrame implements WindowListener {
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
- 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -217,30 +215,30 @@ public class KayitEkrani extends javax.swing.JFrame implements WindowListener {
 
     @Override
     public void windowOpened(WindowEvent e) {
-     }
+    }
 
     @Override
     public void windowClosing(WindowEvent e) {
-     }
+    }
 
     @Override
     public void windowClosed(WindowEvent e) {
         kullaniciGirisEkrani.setVisible(true);
-     }
+    }
 
     @Override
     public void windowIconified(WindowEvent e) {
-     }
+    }
 
     @Override
     public void windowDeiconified(WindowEvent e) {
-     }
+    }
 
     @Override
     public void windowActivated(WindowEvent e) {
-     }
+    }
 
     @Override
     public void windowDeactivated(WindowEvent e) {
-     }
+    }
 }
